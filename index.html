@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#050b16">
+  <meta name="description" content="STOP SAM - Streak and Challenge App">
+
+  <title>STOP SAM</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <div>
+        <h1>STOP SAM</h1>
+        <p>One day at a time.</p>
+      </div>
+
+      <button class="settings-btn" onclick="openSettings()">
+        ⚙️
+      </button>
+
+    </header>
+
+
+    <!-- MAIN TIMER -->
+    <section class="timer-card">
+
+      <div class="circle">
+
+        <div class="circle-inner">
+
+          <h2 id="day">Day 1</h2>
+
+          <div id="timer">
+            00 : 00 : 00
+          </div>
+
+          <span>CURRENT STREAK</span>
+
+        </div>
+
+      </div>
+
+
+      <button class="relapse-btn" onclick="relapse()">
+        ↻ &nbsp; Relapse / Reset
+      </button>
+
+      <p id="message">
+        Start strong. Your next good choice counts.
+      </p>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="stats">
+
+      <div class="stat">
+        <strong id="best">0</strong>
+        <small>Best Days</small>
+      </div>
+
+      <div class="stat">
+        <strong id="total">0</strong>
+        <small>Total Days</small>
+      </div>
+
+      <div class="stat">
+        <strong id="attempts">0</strong>
+        <small>Attempts</small>
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+      <button onclick="openHabits()" class="feature">
+
+        <div class="feature-icon">
+          ✓
+        </div>
+
+        <h3>Daily Habits</h3>
+
+        <p id="habitStatus">
+          0/4 Done
+        </p>
+
+      </button>
+
+
+      <button onclick="openChallenges()" class="feature">
+
+        <div class="feature-icon">
+          🎯
+        </div>
+
+        <h3>My Challenges</h3>
+
+        <p id="challengeStatus">
+          0 Active
+        </p>
+
+      </button>
+
+
+      <button onclick="openAttempts()" class="feature">
+
+        <div class="feature-icon">
+          ▣
+        </div>
+
+        <h3>My Attempts</h3>
+
+        <p>
+          View History
+        </p>
+
+      </button>
+
+
+      <button onclick="openGuide()" class="feature">
+
+        <div class="feature-icon">
+          📖
+        </div>
+
+        <h3>Recovery Guide</h3>
+
+        <p>
+          Daily Reading
+        </p>
+
+      </button>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <button class="about" onclick="openAbout()">
+      About App
+    </button>
+
+  </div>
+
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+
+    <div class="modal-box">
+
+      <button class="close" onclick="closeModal()">
+        ×
+      </button>
+
+      <div id="modalContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <div id="toast" class="toast"></div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
