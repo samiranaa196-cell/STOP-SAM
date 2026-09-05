@@ -1,0 +1,18 @@
+{
+  "name": "STOP SAM",
+  "short_name": "STOP SAM",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050b16",
+  "theme_color": "#071426",
+  "description": "STOP SAM - Streak, Habits and Challenges",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
